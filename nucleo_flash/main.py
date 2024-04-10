@@ -43,4 +43,3 @@ while (True):
             pyb.delay(10)
     else:
         pyb.delay(10)
-

@@ -100,4 +100,3 @@ class DS18X20:
 
     def kelvin(self, celsius):
         return celsius + 273.15 if celsius is not None else None
-
