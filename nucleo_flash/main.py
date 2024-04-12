@@ -9,8 +9,8 @@ import dcf77
 # din : MOSI PB15
 spi = SPI(2, baudrate=10000000)
 
-# Use a single 4x 8x8 matrix (32x8) pixels
-screen = max7219.Max7219(32, 8, spi, Pin('D7'))
+# Use a double 4x 8x8 matrix (64x8) pixels
+screen = max7219.Max7219(64, 8, spi, Pin('D7'))
 
 # Adjust screen brightness
 #  0: min
@@ -48,25 +48,29 @@ dcf.irq([dcf.IRQ_MINUTE], handler)
 # [6] : sec.
 # Initializing loop
 prev_sec = 0
+prev_min = 0
+prev_hour = 0
 
 # Loop forever !
 while (True):
-    sec = rtc.datetime()[6]
-    if (sec != prev_sec):
-        sec_txt = '{0:0=2d}'.format(sec)
+    h_, min_, sec_ = rtc.datetime()[4:7]
+    if (sec_ != prev_sec):
+        sec_txt = '{0:0=2d}'.format(sec_)
+        min_txt = '{0:0=2d}'.format(min_)
+        h_txt = '{0:0=2d}'.format(h_)
         screen.fill(0)
-        screen.text(sec_txt, 8, 0, 1)
+        screen.text(h_txt+':'+min_txt+":"+sec_txt, 0, 0, 1)
         screen.show()
-        if sec in (50, 55, 56, 57, 58, 59):
+        if sec_ in (50, 55, 56, 57, 58, 59):
             led.on()
             pyb.delay(200)
             led.off()
-            prev_sec = sec
-        elif sec == 0:
+        elif sec_ == 0:
             led.on()
             pyb.delay(400)
             led.off()
         else:
             pyb.delay(10)
+        prev_sec = sec_
     else:
         pyb.delay(10)
