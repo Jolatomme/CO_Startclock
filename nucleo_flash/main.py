@@ -48,8 +48,6 @@ dcf.irq([dcf.IRQ_MINUTE], handler)
 # [6] : sec.
 # Initializing loop
 prev_sec = 0
-prev_min = 0
-prev_hour = 0
 
 # Loop forever !
 while (True):
