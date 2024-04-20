@@ -22,8 +22,11 @@ screen.fill(0)
 screen.show()
 
 led = pyb.LED(1)
-dcf = dcf77.dcf77(Pin('D4'))
 rtc = pyb.RTC()
+dcf = dcf77.dcf77(Pin('D4'))
+
+# Starting receiving and decoding
+dcf.start()
 
 # Cutstom irq handler
 def handler():
@@ -35,17 +38,12 @@ def handler():
 # Set IRQ every minute for dcf signal
 dcf.irq([dcf.IRQ_MINUTE], handler)
 
-# Starting receiving and decoding
-#dcf.start()
 
 # Wait for valid signal
-#while not dcf.get_Infos()['Valid']:
-#    pass
+while not dcf.get_Infos()['Valid']:
+    pass
 
-# Datetime structure
-# [4] : H
-# [5] : min.
-# [6] : sec.
+# Datetime structure [4] : H.; [5] : min.; [6] : sec.
 # Initializing loop
 prev_sec = 0
 
@@ -53,11 +51,9 @@ prev_sec = 0
 while (True):
     h_, min_, sec_ = rtc.datetime()[4:7]
     if (sec_ != prev_sec):
-        sec_txt = '{0:0=2d}'.format(sec_)
-        min_txt = '{0:0=2d}'.format(min_)
-        h_txt = '{0:0=2d}'.format(h_)
+        h_txt = '{0:0=2d}:{1:0=2d}:{2:0=2d}'.format(h_, min_, sec_)
         screen.fill(0)
-        screen.text(h_txt+':'+min_txt+":"+sec_txt, 0, 0, 1)
+        screen.text(h_txt, 0, 0, 1)
         screen.show()
         if sec_ in (50, 55, 56, 57, 58, 59):
             led.on()
