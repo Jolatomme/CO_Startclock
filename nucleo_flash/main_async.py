@@ -154,8 +154,8 @@ async def DispUpdate():
 async def RTCResync():
     while True:
         await ITDcfTSF.wait()
-        dcf_datetime = self.dcf.get_DateTime()
-        self.rtc.set_datetime(dcf_datetime)
+        dcf_datetime = dcf.get_DateTime()
+        rtc.set_datetime(dcf_datetime)
 
 async def main():
     asyncio.create_task(RTCResync())
