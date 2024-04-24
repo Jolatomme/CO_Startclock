@@ -42,8 +42,7 @@ class Rtc(object):
 class Dcf(object):
     ''' Dcf based on interrupts
     '''
-    def __init__(self, dcf=None, rtc=None):
-        self.rtc = rtc
+    def __init__(self, dcf=None):
         self.dcf = dcf
         self.start()
         self.dcf.irq([dcf.IRQ_MINUTE], self.cb)
@@ -114,7 +113,7 @@ led = pyb.LED(1)
 ################
 # Matrix Display
 ################
-# Using SPI 2 for easy PIN wiring
+# Using SPI 2 for easy PIN wiring on Nucleo 64
 # and chip select PIN D7
 screen = MatrixDisp(SPI(2, baudrate=10000000), Pin('D7'))
 
@@ -127,7 +126,7 @@ rtc = Rtc(pyb.RTC())
 ################
 # DCF77
 ################
-dcf = Dcf(dcf77.dcf77(Pin('D4')), rtc)
+dcf = Dcf(dcf77.dcf77(Pin('D4')))
 
 prev_sec = -1
 updating_display = False
