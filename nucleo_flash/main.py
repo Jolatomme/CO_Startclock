@@ -154,7 +154,6 @@ async def RTCResync():
         await ITDcfTSF.wait()
         DCFdatetime = dcf.GETDateTime()
         rtc.set_datetime(DCFdatetime)
-        print('Resync done', DCFdatetime)
 
 async def main():
     asyncio.create_task(RTCResync())
