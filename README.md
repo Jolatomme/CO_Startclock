@@ -13,5 +13,5 @@ by the DCF77 signal.
 More theoretical details on project
 [Wiki](https://github.com/Jolatomme/CO_Startclock/wiki)
 
-## Project example on a Singlme sided stripboard
+## Project example on a Single sided stripboard
 ![Realization](https://github.com/Jolatomme/CO_Startclock/blob/main/Img/CO_Clock_bb.png)
