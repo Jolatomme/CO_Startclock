@@ -14,4 +14,4 @@ More theoretical details on project
 [Wiki](https://github.com/Jolatomme/CO_Startclock/wiki)
 
 ## Project example on a Singlme sided stripboard
-![Realization](https://github.com/Jolatomme/CO_Startclock/Img/CO_Clock_bb.png)
+![Realization](https://github.com/Jolatomme/CO_Startclock/blob/main/Img/CO_Clock_bb.png)
