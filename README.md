@@ -10,5 +10,8 @@ uncertainty on the effective race time. The proposed project is trying to
 correct this problem by keeping the start clock to the absolute time delivered
 by the DCF77 signal.
 
-More on project
+More theoretical details on project
 [Wiki](https://github.com/Jolatomme/CO_Startclock/wiki)
+
+## Project example on a Singlme sided stripboard
+![Realization](https://github.com/Jolatomme/CO_Startclock/Img/CO_Clock_bb.png)
