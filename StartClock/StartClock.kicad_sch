@@ -8707,7 +8707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Phoenix-Contact/1725656?qs=Ul7CXFMnlWWQeccayYbRmw%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/691210910002?qs=sPbYRqrBIVlpmUgpxfjjUA%3D%3D"
 			(at 149.86 180.34 0)
 			(effects
 				(font
@@ -8944,7 +8944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Phoenix-Contact/1725656?qs=Ul7CXFMnlWWQeccayYbRmw%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/691210910002?qs=sPbYRqrBIVlpmUgpxfjjUA%3D%3D"
 			(at 259.08 154.94 0)
 			(effects
 				(font
@@ -8996,7 +8996,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 129.794 83.566 90)
 			(effects
 				(font
@@ -9023,7 +9023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/YAGEO/AC1210FR-7W220RL?qs=r5DSvlrkXmJYQoM71ylR%2FQ%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/YAGEO/RC2512FK-07220RL?qs=GMd7ukQor4OMhGSsbk8aRQ%3D%3D"
 			(at 130.81 83.82 0)
 			(effects
 				(font
@@ -10196,7 +10196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Phoenix-Contact/1725656?qs=Ul7CXFMnlWWQeccayYbRmw%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/691210910002?qs=sPbYRqrBIVlpmUgpxfjjUA%3D%3D"
 			(at 143.51 90.17 0)
 			(effects
 				(font
@@ -10529,7 +10529,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50n"
+		(property "Value" "0.047u"
 			(at 242.57 138.4299 0)
 			(effects
 				(font
@@ -11000,7 +11000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Phoenix-Contact/1725685?qs=A%2FKWGUWTCZiuYWt6zAMYZA%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/691210910005?qs=sPbYRqrBIVmsC84njkCQMg%3D%3D"
 			(at 237.49 81.28 0)
 			(effects
 				(font
@@ -11378,7 +11378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Phoenix-Contact/1725685?qs=A%2FKWGUWTCZiuYWt6zAMYZA%3D%3D"
+		(property "Ref mouser" "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/691210910004?qs=sPbYRqrBIVlxffWXw70IkA%3D%3D"
 			(at 30.48 177.8 0)
 			(effects
 				(font
