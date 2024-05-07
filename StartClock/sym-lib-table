@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "StartClock")(type "KiCad")(uri "${KIPRJMOD}/StartClock.kicad_sym")(options "")(descr ""))
+)
