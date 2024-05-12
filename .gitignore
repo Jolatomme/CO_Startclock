@@ -1,3 +1,34 @@
 # File exclusion
+
+# Generic backup files
+*~
+\#*
+.\#*
+*.000
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
 # KiCad backup files
-./StartClock/StartClock-backups/*
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+
+# KiCad generated files
+*.erc
+*.net
+*-cache.lib
+*-rescue.lib
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# KiCad backup directory
+StartClock/StartClock-backups/
